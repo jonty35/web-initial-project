@@ -10,7 +10,7 @@
         
         <h1>Student-Details</h1>
         <!-- Personal -->
-        <table >
+        <table>
             <thead><h2>Personal</h2></thead>
             <tr>
                 <td><label for="First Name">First Name :</label></td>
@@ -33,7 +33,7 @@
                 <td><input type="date" name="" id="dt"></td>
             </tr>
             <tr >
-                <td><label for="">Gender :</label></td>
+                <td>Gender :</td>
                 <td >
                     <input type="radio" name="Gender" id="gen1"><label for="gen1">Male</label>
                     <input type="radio" name="Gender" id="gen2"><label for="gen2">Femle</label>
@@ -139,16 +139,18 @@
                 </td>
             </tr>
             <tr>
-                <td><label for="stream">Stream</label></td>
+                <td>Stream :</td>
                 <td>
-                    <input type="radio" name="stream" id="str1">
-                    <input type="radio" name="stream" id="str2">
-                    <input type="radio" name="stream" id="str3">
-                    <input type="radio" name="stream" id="str4">
+                    <input type="radio" name="stream" id="str1"><label for="str1">Mech</label>
+                    <input type="radio" name="stream" id="str2"><label for="str2">Civil</label>
+                    <input type="radio" name="stream" id="str3"><label for="str3">CS</label>
+                    <input type="radio" name="stream" id="str4"><label for="str4">EC</label>
+                    <input type="radio" name="stream" id="str5"><label for="str5">IT</label>
+                    <input type="radio" name="stream" id="str6"><label for="str6">EEE</label>
                 </td>
             </tr>
             <tr>
-                <td><label for="if">If other :</label></td>
+            ><td><label for="if">If other :</label></td>
                 <td><input type="text" name="" id="if"></td>
             </tr>
             <tr>
@@ -181,53 +183,70 @@
         <!-- Placement -->
         <table>
             <thead><h2>Placement</h2></thead>
-             <tr>
-        </tr>
-        <tr>
-            <td>Skills:</td>
-            <td>
-                <input type="checkbox"> HTML
-                <input type="checkbox"> CSS
-                <input type="checkbox"> JS
-                <input type="checkbox"> ReactJS
-                <input type="checkbox"> ReactJS
-                <input type="checkbox"> React Native
-                <input type="checkbox"> NodeJS
-                <input type="checkbox"> ElectronJS
-
-            </td>
-        </tr>
-        <tr>
-            <td>Domain:</td>
-            <td>
-                <input type="radio" name="domain"> DevOps
-                <input type="radio" name="domain"> Testing
-                <input type="radio" name="domain"> Development
-                <input type="radio" name="domain"> Support
-            </td>
-        </tr>
-        <tr>
-            <td>Place Preference:</td>
-            <td>
-                <input type="radio" name="place"> Bangalore
-                <input type="radio" name="place"> Chennai
-                <input type="radio" name="place"> Hyderabad
-                <input type="radio" name="place"> Pune
-                <input type="radio" name="place"> Delhi
-                <input type="radio" name="place"> Pan India
-            </td>
-        </tr>
-        <tr>
-            <td>Expected Salary:</td>
-            <td>
-                
-                <input type="radio" name="salary"> Less than 3 LPA
-                <input type="radio" name="salary"> 3.6 LPA
-                <input type="radio" name="salary"> 6-10 LPA
-                <input type="radio" name="salary"> More than 10 LPA
-                <input type="radio" name="salary"> No Expectation
-            </td>
-        </tr>
+            <tr>
+                <td>Skills:</td>
+                <td>
+                    <input type="checkbox" id="ht" name="skills" value="HTML"><label for="ht">HTML</label>
+                    <input type="checkbox" id="cs" name="skills" value="CSS"><label for="cs">CSS</label>
+                    <input type="checkbox"id="js" name="skills" value="JS"><label for="js">JS</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="rj" name="skills" value="REACTJS"><label for="rj">REACTJS</label>
+                    <input type="checkbox" id="rn" name="skills" value="REACT NATIVE"><label for="rn">REACT NATIVE</label>
+                    <input type="checkbox" id="tf" name="skills" value="TENSERFLOWJS"><label for="tf">TENSERFLOWJS</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox"  id="nj" name="skills" value="NODEJS"><label for="nj">NODEJS</label>
+                    <input type="checkbox"  id="ej" name="skills" value="ELECTRONJS"><label for="ej">ELECTRONJS</label>
+                    <input type="checkbox"  id="rd" name="skills" value="REDEEM"><label for="rd">REDEEM</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Domain:</td>
+            </tr>
+            <tr>
+                 <td>
+                    <input type="radio" name="domain" id="rj2" ><label for="rj2">Devops</label>
+                    <input type="radio" name="domain" id="te" ><label for="te">Testing</label>
+                    <input type="radio" name="domain" id="dev" ><label for="dev">Dev</label>
+                    <input type="radio" name="domain" id="sup" ><label for="sup">Support</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Place Preference:</td>
+                <td>
+                    <input type="radio" name="place" id="bg" ><label for="bg">Banglore</label>
+                    <input type="radio" name="place" id="che" ><label for="che">Chennai</label>
+                </td>
+                <tr>
+                    <td>
+                        <input type="radio" name="place" id="hyd" ><label for="hyd">Hyderabad</label>
+                    <input type="radio" name="place" id="pu" ><label for="pu">Pune</label> 
+                    <input type="radio" name="place" id="del" ><label for="del">Delhi</label>
+                    <input type="radio" name="place" id="pi" ><label for="pi">Pan INDIA</label>
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td>Expected Salary:</td>
+                <td>
+                    
+                    <input type="radio" name="salary"> Less than 3 LPA
+                    <input type="radio" name="salary"> 3.6 LPA
+                    
+                </td>
+                <tr>
+                    <td>
+                        <input type="radio" name="salary"> 6-10 LPA
+                    <input type="radio" name="salary"> More than 10 LPA
+                    <input type="radio" name="salary"> No Expectation
+                    </td>
+                </tr>
+            </tr>
 
         </table>
         <!-- Create account -->
